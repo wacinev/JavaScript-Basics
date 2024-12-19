@@ -1,0 +1,62 @@
+.movie-holder {
+    background-color:#000;
+    height: 560px;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 1.33rem;
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 0;
+}
+
+img {
+    width: 170px;
+    height: 230px;
+    margin: 10px;
+}
+
+.container {
+    height: 89vh;
+    width:860px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.divvy {
+    display: inline-block;
+    background-color: #333;
+    width: 200px;
+    height: 320px;
+    margin: 7px;
+    color: #fff;
+    font-size: 0.8rem;
+    /* font-weight: bold; */
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+.sort-div {
+    padding-bottom: 20px;
+}
+
+select {
+    margin-right: 30px;
+    padding: 3px 10px;
+    font-size: 1.05rem;
+    width: 140px;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+input {
+    width: 18px;
+    height: 18px;
+}
+
+.sort-div {
+    display: inline-block;
+}

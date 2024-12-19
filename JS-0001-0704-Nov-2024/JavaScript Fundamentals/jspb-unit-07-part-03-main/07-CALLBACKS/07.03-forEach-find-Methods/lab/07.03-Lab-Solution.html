@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07.03 Lab</title>
+
+    <style>
+      body {
+        background-color: #555;
+        color: #555;
+        font-family: sans-serif;
+        text-align: center;
+      }
+
+      .container {
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 10px;
+        border: 3px solid #999;
+        width: 650px;
+        height: 65vh;
+        background-color: #ccc;
+      }
+
+      img {
+        width: 90px;
+        float: left;
+        padding-right: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div>
+        <!-- <img src="../../../images/lab-testtube.jpg"> -->
+        <h1>
+          JS Lab Solution 07.03 <br />forEach <br />vs. map-filter chaining
+          <br />refactoring if-else with ternary
+        </h1>
+
+        <h3>
+          Please check your Lab work against this Solution file <br />only after
+          having given the Lab your best effort!
+        </h3>
+      </div>
+    </div>
+
+    <script>
+// 1. use find() to find the first animal that starts with a vowel.
+      const animals = [
+        "bunny",
+        "cat",
+        "dog",
+        "elephant",
+        "frog",
+        "giraffe",
+        "hedgehog",
+        "iguana",
+        "lynx",
+        "manatee",
+      ];
+
+      // SOLUTION EXPLAINED: includes() method returns true or false based on whether or not its argument
+      // is present in the string or array it is called on
+      // the answer is 'elephant', which starts with a vowel
+      const startsVowel = animals.find((e) => "aeiou".includes(e[0]));
+
+      console.log("startsVowel:", startsVowel);
+
+      // 2. Use the findIndex() method to find the index of the first animal that ends in a vowel.
+      // SOLUTION EXPLAINED: The last index of a string or array is always item.length-1;
+      // the answer is 'giraffe', which ends in a vowel
+      const endsVowel = animals.find((e) => "aeiou".includes(e[e.length - 1]));
+
+      console.log("endsVowel:", endsVowel); // giraffe
+
+      // 3. Use the findIndex() method to find the index of the first number with an integer for its square root.
+      // SOLUTION EXPLAINED: If the square root of an integer is rounded off, the integer does not change,
+      // so, if the square root is rounded off and it is still equal to the square root itself,
+      // then the square root is an integer
+      // The target is 16, since that is the first number that has an integer for a square root
+      // the expected answer is the index, so 1 is the correct answer
+      const sqRtInt = digits.findIndex(
+        (e) => Math.round(Math.sqrt(e)) == Math.sqrt(e)
+      );
+
+      console.log("sqRtInt:", sqRtInt);
+
+      // END Lab 07.03 Solution
+    </script>
+  </body>
+</html>
