@@ -43,3 +43,16 @@ const instructor = (names) => {
 }
 
 student1();
+
+const sumArray = (nums) => {
+    if (nums.length === 1) {
+        return nums [0];
+    }
+
+    return nums[0] + sumArray(nums.slice(1))
+}
+
+sumArray([9]); //> 9
+sumArray([5, 9]); //> 5 + sumArray([9])
+sumArray([3, 5, 9]); //> 3 + sumArray([5, 9])
+sumArray([100, 3, 5, 9]); //> 100 + sumArray([3, 5, 9])
